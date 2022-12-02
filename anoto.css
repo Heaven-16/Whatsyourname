@@ -1,0 +1,89 @@
+.Area{
+    background-color: #ffffff00;
+    width:auto;
+    text-align:center;
+    padding:7px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.ques{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#input1{
+    border-radius: 15px;
+    border: 2px solid rgba(102, 0, 153, 0);
+    padding: 20px; 
+    width: auto;
+    height: 40px;
+    font-size: larger;
+    background-color: antiquewhite;
+}
+
+.sendbutton{
+    margin-top: 10px;
+    vertical-align: -7px;
+    border-radius: 25px;
+    padding: 8px;
+    border: none;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.sendbutton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: grey;
+}
+#demo{
+    background-color: rgba(20, 31, 27, 0.301);
+    width:fit-content;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    top: 53%;
+    text-align: center;
+}
+
+.section video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section .close {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(28, 130, 247);
+    color: white;
+    font-size: 16px;
+    padding:10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    text-align: center;
+}
+.section .close:hover {
+    background-color: rgb(255, 0, 0);
+}

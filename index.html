@@ -1,0 +1,70 @@
+<html>
+    <title>
+        di ko alam
+    </title>
+    <head>
+        <link href="anoto.css" rel="stylesheet">
+        <style>
+        #image {
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <body style="background-image: url(background.jpg);
+        background-size: cover;
+        background-position: 30%;">
+    <div class="Area">
+            <div class="ques">What is your name?</div>
+                <input type="text" id="input1" placeholder="Enter your name">
+                <button class="sendbutton"id="button"><img src="send.png" style="height: 25px; padding-left: 1px;float:inline-end"></button>
+            <center><p id="demo"></p>
+            <img id="image" src="i-love-you-love.gif"></center>
+    </div> 
+    
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+        let name2 = new Array ("Rica", "rica", "Rica Angela", "Rica angela", "Rica angela canlas", "Rica Angela Canlas");
+        let button = document.getElementById("button");
+        let input = document.getElementById("input1");
+        const text = document.getElementById('demo')
+        let btn = document.getElementById('close');
+
+        button.addEventListener("click", function()
+        {
+            var fname = document.getElementById("input1").value;
+            let capitalized =
+            fname.charAt(0).toUpperCase()
+            + fname.slice(1)
+            if (fname.length > 0) {
+        text.innerHTML = "Hello! " + capitalized;
+            } 
+            else {
+        alert("Enter your name");
+        text.innerHTML = ""
+            return 0;
+            }
+            
+            if (name2.includes(capitalized)){
+        alert("Welcome");
+        show('image');
+            function show() {
+            document.getElementById('image')
+                    .style.display = "block";
+            }
+        alert("Hi " + capitalized)
+        alert("Ganda mo")
+            }
+            else{
+        alert("Hi " + capitalized)
+        alert("Click ok to see magic")
+        document.body.innerHTML = "<div class='section'><video id='ricky' controls><source src='Rick Rolled (Short Version).mp4' type='video/mp4'></video><button  class='close'id='close'>X</button></div>"
+        ricky.play();
+        ricky.toggleAttribute('loop')
+            }
+})
+        
+        </script>
+    
+    </body>
+</html>
